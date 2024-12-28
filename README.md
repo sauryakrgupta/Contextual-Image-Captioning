@@ -12,3 +12,8 @@ This project predicts captions for input images using the Flickr8k dataset. The 
 3. ***Evaluation***: BLEU Score used to measure model performance.
 -BLEU-1 Score: 0.544
 -BLEU-2 Score: 0.319
+
+## Libraries and Frameworks
+   - Python (numpy, matplotlib)
+   - TensorFlow and Keras
+   - Natural Language Toolkit (nltk)

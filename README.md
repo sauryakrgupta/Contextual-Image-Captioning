@@ -3,6 +3,8 @@ The objective of the project is to predict the captions for the input image. The
 
 The dataset contains 8,000 images, each accompanied by five descriptive captions. The project employs deep learning techniques, combining image and text features to generate captions. It combines image features extracted via a CNN (VGG16) and text sequences processed with an LSTM to predict captions word-by-word.
 
+## DataSet Link: https://www.kaggle.com/datasets/adityajn105/flickr8k
+
 ## Key Features
 1. ***Dataset***: Flickr8k, with 8k images and 5 captions per image.
 

@@ -16,9 +16,17 @@ The dataset contains 8,000 images, each accompanied by five descriptive captions
 -BLEU-2 Score: 0.319
 
 ## Libraries and Frameworks
-   - Python (numpy, matplotlib)
-   - TensorFlow and Keras
+   - numpy
+   - keras
+   - matplotlib
+   - TensorFlow
    - Natural Language Toolkit (nltk)
+
+## Neural Network
+   - VGG16 Network
+   - CNN-LSTM Network
+     
+BLEU-1 Score: 0.544 BLEU-2 Score: 0.319
 
 ## **Steps Involved**  
 

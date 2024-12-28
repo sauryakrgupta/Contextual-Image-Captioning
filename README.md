@@ -17,3 +17,48 @@ This project predicts captions for input images using the Flickr8k dataset. The 
    - Python (numpy, matplotlib)
    - TensorFlow and Keras
    - Natural Language Toolkit (nltk)
+
+## **Steps Involved**  
+
+1. **Dataset Preparation**  
+   - Download the Flickr8k dataset containing images and corresponding captions.  
+   - Extract and organize the dataset to ensure accessibility to images and captions.  
+
+2. **Data Preprocessing**  
+   - **Image Preprocessing**:  
+     - Resize and normalize images.  
+     - Extract image features using the pre-trained VGG16 model, removing the top (classification) layer.  
+     - Save the extracted features for later use.  
+   - **Text Preprocessing**:  
+     - Load and clean captions by removing punctuation, converting text to lowercase, and handling contractions.  
+     - Tokenize the captions and build a vocabulary.  
+     - Convert captions into sequences of integer tokens, padded to equal lengths.  
+
+3. **Dataset Preparation for Training**  
+   - Map each image feature to multiple captions.  
+   - Create input-output pairs for training:  
+     - **Inputs**: Image features and partial sequences of tokens from captions.  
+     - **Outputs**: The next word in the sequence.  
+
+4. **Model Development**  
+   - Design a CNN-LSTM model:  
+     - **CNN (VGG16)**: To extract image features.  
+     - **LSTM**: To process text sequences and predict the next word in a caption.  
+     - Fully connected layers to combine image and text features.  
+   - Compile the model with appropriate loss functions and optimizers.  
+
+5. **Model Training**  
+   - Train the CNN-LSTM model using the prepared input-output pairs.  
+   - Use a suitable batch size and monitor loss during training.  
+
+6. **Model Evaluation**  
+   - Generate captions for test images by feeding the model extracted features and a start sequence token.  
+   - Evaluate the generated captions using BLEU scores (BLEU-1, BLEU-2, etc.) to assess accuracy.  
+
+7. **Caption Generation**  
+   - For new images, preprocess the image and extract features.  
+   - Use the trained model to predict captions word-by-word until an end token is generated.  
+
+8. **Visualization and Testing**  
+   - Display the test images with their corresponding generated captions.  
+   - Analyze model performance and compare generated captions with ground truth.  

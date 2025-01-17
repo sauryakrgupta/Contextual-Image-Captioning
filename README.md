@@ -30,7 +30,7 @@ The dataset contains 8,000 images, each accompanied by five descriptive captions
      
 BLEU-1 Score: 0.544 BLEU-2 Score: 0.319
 
-## **Steps Involved**  
+## **General Steps Involved throughtout this project**  
 
 1. **Dataset Preparation**  
    - Download the Flickr8k dataset containing images and corresponding captions.  
